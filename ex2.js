@@ -37,3 +37,43 @@ vendedor1.Salario = 10000
 vendedor1.PercentualComissao = 0.2
 vendedor1.calcularSalario()
 vendedor1.ExibirInformacoes()
+
+// Parte 2:
+
+class Produto{
+    Nome
+    Valor
+}
+
+class Vendas{
+    Vendedor
+    ListaDeProdutos = []
+    ValorTotal
+
+    AdicionarProduto(){
+        let produtoNovo = new Produto;
+        produtoNovo.Nome = prompt("Insira o nome do produto:")
+        produtoNovo.Valor = prompt("Insira o valor do produto:")
+        this.ListaDeProdutos.push(produtoNovo)
+    }
+
+    CalcularTotal(){
+        let valorTotal = 0
+        this.ListaDeProdutos.forEach((x,index) => {
+            valorTotal = parseFloat(x.Valor) + parseFloat(valorTotal)
+        })
+        this.ValorTotal = valorTotal
+    }
+
+    FinalizarVenda(){
+        console.log("Vendedor: " +this.Vendedor.Nome+ "\nValor total dos produtos: R$" +parseFloat(this.ValorTotal).toFixed(2))
+    }
+}
+
+let venda1 = new Vendas;
+venda1.Vendedor = vendedor1
+venda1.AdicionarProduto()
+venda1.AdicionarProduto()
+venda1.AdicionarProduto()
+venda1.CalcularTotal()
+venda1.FinalizarVenda()
