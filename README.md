@@ -1,4 +1,4 @@
-Parte 1
+# Parte 1
 1. Criar uma classe Funcionário que possui as propriedades Nome e Salário;
 2. Criar a classe Gerente que herda da classe Funcionário e possui a propriedade
 Departamento;
@@ -12,7 +12,12 @@ valor do Salário acrescido do PercentualComissao;
 console as seguintes informações do Vendedor: Nome, Salario, Salario com
 comissão e o PercentualComissao.
 
-Parte 2
+## Parte 1.1
+
+ Crie um método construtor para cada classe que receba como parâmetro as
+informações que serão atribuídas as propriedades.
+
+# Parte 2
 1. Criar uma classe Produto com as propriedades Nome e Valor;
 2. Criar a classe Venda com as propriedades Vendedor que deve ser um objeto da
 classe Vendedor criada anteriormente, ListaDeProdutos que deve ser um array e
@@ -24,3 +29,9 @@ de todos os Produtos na ListaDeProdutos e salvar na propriedade ValorTotal o
 resultado dessa soma;
 5. Na classe Venda implementar um método FinalizarVenda() que deve exibir no
 console no nome do Vendedor e o ValorTotal da venda.
+
+## Parte 2.1
+
+Crie um método construtor para cada classe que receba como parâmetro as
+informações que serão atribuídas as propriedades, com exceção da ListaDe
+Produtos e ValorTotal da classe Venda.
